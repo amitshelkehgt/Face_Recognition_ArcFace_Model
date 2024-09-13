@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ url_for('static', path='/logo192.png') }}" />
+    <link rel="manifest" href="{{ url_for('static', path='/manifest.json') }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="attendance record automation" />
+ 
+    <title>Face Recognition Application</title>
+</head>
+ 
+<style>
+    /* General Styles */
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+ 
+        /* Navbar Styles */
+        .navbar {
+            background-color: #4f4f4f;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+ 
+        .navbar a, .navbar .app-name {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+ 
+        .navbar .app-name {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+ 
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+ 
+        .navbar a.active {
+            background-color: #666;
+            color: white;
+        }
+ 
+    /* AddEmployeeForm Styles */
+    #addEmployeeForm {
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+    }
+ 
+    .addEmployeeInput {
+        margin-bottom: 20px;
+    }
+ 
+    .addEmployeeInputText {
+        max-width: 200px;
+        margin-bottom: 20px;
+        outline: 0;
+        border-width: 0 0 1px;
+        border-color: #013087;
+        padding: 5px;
+    }
+ 
+    .addEmployeeButton {
+        max-width: 100px;
+        padding: 10px 20px;
+        background: forestgreen;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        align-self: center;
+    }
+ 
+    .successAddUser {
+        padding: 10px;
+        color: #25AD47;
+        font-weight: bold;
+    }
+ 
+    .errorAddUser {
+        padding: 10px;
+        color: #E62727;
+        font-weight: bold;
+    }
+ 
+    .h3AddEmployee {
+        display: flex;
+        align-items: center;
+    }
+ 
+    /* EmployeeToDeleteList Styles */
+    .itemLi {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        background: rgba(242, 242, 242, 0.5);
+        padding: 10px;
+        border-radius: 3px;
+        align-items: center;
+    }
+ 
+    .itemButton {
+        background: #f73131;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        border-radius: 3px;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-left: auto;
+    }
+    .updateButton {
+        background: forestgreen;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        border-radius: 3px;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-left: auto;
+    }
+ 
+    .reloadImgTag {
+        height: 30px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+ 
+    /* .h3WithReload {
+        display: flex;
+        align-items: center;
+    } */
+/* Employee Search Styles */
+    .search-section {
+            display: flex;
+            flex-direction: column;
+            margin: 40px 10px;
+            background-color: #ffffff;
+            padding: 20px;
+            width: 45vw;
+        }
+        .search-section h2 {
+            margin-top: 0;
+            font-size: 45px;
+            line-height: 1;
+            font-weight: normal;
+            color: #010308;
+            text-align: left;
+ 
+           
+        }
+        .search-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .answer-div {
+            min-width: 90%;
+        }
+        .search-input {
+            max-width: 200px;
+            margin-bottom: 20px;
+            outline: 0;
+            border-width: 0 0 1px;
+            border-color: #013087;
+            padding: 5px;
+        }
+        .search-button {
+            max-width: 100px;
+            padding: 10px 20px;
+            background: forestgreen;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            font-weight: bold;
+            margin: 0;
+            cursor: pointer;
+        }
+       
+        .one-result {
+            padding: 15px;
+            margin: 15px 0;
+            min-width: 100%;
+            box-shadow: 3px 3px 8px 3px #ccc;
+        }
+        .list-item {
+            list-style: none;
+            margin-bottom: 5px;
+        }
+        .ul-list {
+            min-width: 100%;
+        }
+       
+  .main-container {
+    padding : 5px;
+    /* border: 1px solid gray; */
+  }
+ 
+ 
+  /* Update Employee Styles */
+.update-section {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 45vw;
+}
+.update-section h3 {
+    margin-top: 0;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: normal;
+    color: #010308;
+    text-align: left;
+}
+.update-container {
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center; */
+    align-items: center;
+}
+.update-input {
+    max-width: 200px;
+    margin-bottom: 20px;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: #013087;
+    padding: 5px;
+}
+.update-button {
+    max-width: 100px;
+    padding: 10px 20px;
+    background: forestgreen;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    cursor: pointer;
+}
+.form-div {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    min-width: 90%;
+}
+.answer-div {
+    min-width: 90%;
+}
+ 
+ 
+.successAddUsers {
+        padding: 10px;
+        color: #25AD47;
+        font-weight: bold;
+    }
+ 
+    .errorAddUsers {
+        padding: 10px;
+        color: #E62727 !important;
+        font-weight: bold;
+        display: none;
+    }
+ 
+   
+ 
+    .employee-table th, .employee-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+ 
+.employee-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+ 
+.employee-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+ 
+.employee-table tr:hover {
+    background-color: #f1f1f1;
+}
+ 
+ 
+#updatePopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: none; /* Initially hidden */
+}
+ 
+</style>
+ 
+<body>
+ 
+    <!-- Navbar -->
+    <div class="navbar">
+        <span class="app-name">Face Recognition Application</span>
+        <!-- <a href="#addEmployeeSection">Add Employee</a>
+        <a href="#deleteEmployeeSection">Delete Employee</a> -->
+        <a href="#" id="openPageButton">Open Web Page</a>
+    </div>
+    <!-- <button id="openPageButton">Open Web Page</button> -->
+    <!-- <noscript>You need to enable to run this app.</noscript> -->
+<div class="main-container">
+    <section>
+      <h3 class="h3AddEmployee">Add an Employee</h3>
+      <div id="addEmployeeForm">
+          <input class="addEmployeeInputText" id="nameOfEmployee" name="name" placeholder="Enter name" type="text" />
+          <input class="addEmployeeInput" type="file" alt="employee" id="employeePictureToSend" name="employeePictureToSend" />
+      </div>
+     <div><button class="addEmployeeButton" onclick="addEmployeeToDb(event)">Add</button>
+        <p class="successAddUser" id="successAddUser" style="display: none;">User well added to the Database!</p>
+        <p class="errorAddUser" id="errorAddUser" style="display: none;">User didn't add to the Database. Please try later...</p>
+     </div>
+   </section>
+ 
+   <section>  
+      <div class="componentsContainer">
+          <div>
+              <section>
+                    <h3 >Delete an Employee</h3>
+                        <!-- <img class="reloadImgTag" src="path/to/reload.png" alt="reload" onclick="getEmployeeList()" /> -->
+                    <ul id="employeeList"></ul>
+              </section>
+          </div>
+      </div>
+  </section>
+ 
+  <section>
+    <h3>Search for an Employee</h3>
+    <div >
+        <div>
+            <input class="search-input" name="searchForEmployee" id="searchForEmployee" placeholder="Enter Name" type="text"/>
+        </div>
+        <div>
+            <button class="search-button" onclick="searchForEmployee()" id="searchButton">Search</button>
+        </div>
+        <div class="answer-div" id="answerDiv">
+        </div>
+    </div>
+</section>
+ 
+ 
+<div id="updatePopup" style="display: none;">
+<section >
+    <h3>Update an Employee</h3>
+    <div class="update-container">
+        <form id="updateEmployeeForm" enctype="multipart/form-data">
+            <div class="form-div">
+                <input class="update-input" name="currentName" id="currentName" placeholder="Current Name" type="text" required/>
+            </div>
+            <div class="form-div">
+                <input class="update-input" name="newName" id="newName" placeholder="New Name (optional)" type="text"/>
+            </div>
+            <div class="form-div">
+                <input class="update-input" name="image" id="image" type="file" accept="image/*"/>
+            </div>
+            <div class="form-div">
+                <button class="update-button" type="button" onclick="updateEmployee()" id="updateButton">Update</button>
+            </div>
+            <div>
+        </form>
+        <div class="answer-div" id="updateAnswerDiv">
+            <!-- Results will be displayed here -->
+            <p class="successAddUsers"  style="display: none;">User successfully updated!</p>
+            <p class="errorAddUsers"  style="display: none;">Error updating user. Please try later...</p>
+        </div>
+    </div>
+   
+</section>
+</div>
+</div>
+ </body>
+ 
+<script>
+  let isUserWellAdded = false;
+  let errorWhileAddingUser = false;
+ 
+  let backendURI = "http://127.0.0.1:8000"
+//   let backendURI = "http://127.0.0.1:5000"
+ 
+  function addEmployeeToDb(e) {
+      e.preventDefault();
+      let name = document.getElementById("nameOfEmployee").value;
+      let picture = document.getElementById('employeePictureToSend');
+ 
+      let formData = new FormData();
+      formData.append("nameOfEmployee", name);
+      formData.append("image", picture.files[0]);
+ 
+      fetch(`${backendURI}/add_employee`, {
+          method: 'POST',
+          body: formData
+      }).then(response => {
+          if (response.ok) {
+              document.getElementById("successAddUser").style.display = 'block';
+              document.getElementById("errorAddUser").style.display = 'none';
+          } else {
+              document.getElementById("successAddUser").style.display = 'none';
+              document.getElementById("errorAddUser").style.display = 'block';
+          }
+      }).catch(error => {
+          document.getElementById("successAddUser").style.display = 'none';
+          document.getElementById("errorAddUser").style.display = 'block';
+      });
+  }
+ 
+  function getEmployeeList() {
+      fetch(`${backendURI}/get_employee_list`)
+          .then(response => response.json())
+          .then(data => {
+                console.log("data:",data);
+              const employeeList = document.getElementById('employeeList');
+              employeeList.innerHTML = '';
+              Object.values(data).forEach(employee => {
+                    console.log(employee);
+                  let li = document.createElement('li');
+                  li.className = 'itemLi';
+                //   li.innerHTML = `
+                //       <img src="../assets/img/users/${employee}.jpg" alt="${employee}" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;" />
+                //       ${employee}
+                //       <button class="itemButton" onclick="deleteEmployee('${employee}')">Delete</button>
+                //        <button class="updateButton " onclick="deleteEmployee('${employee}')">Update</button>
+                //   `;
+                li.innerHTML = `
+            <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+    <div style="display: flex; align-items: center;">
+      <img src="assets/img/users/${employee}.jpg" alt="${employee}" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;" />
+      ${employee}
+    </div>
+    <div>
+      <button class="updateButton" onclick="openDialog('${employee}')">Update</button>
+      <button class="itemButton" onclick="deleteEmployee('${employee}')">Delete</button>
+      </div>
+  </div>
+`;
+ 
+                  employeeList.appendChild(li);
+              });
+          });
+  }
+ 
+  document.addEventListener('DOMContentLoaded', function() {
+    getEmployeeList();
+});
+ 
+function updateEmployeePopup(employee) {
+  // Get the popup element
+  var popup = document.getElementById('updatePopup');
+ 
+  // Set the current employee name in the form
+  var currentNameInput = document.getElementById('currentName');
+  currentNameInput.value = employee;
+ 
+  // Display the popup
+  popup.style.display = 'block';
+}
+ 
+// Function to close the popup (optional, if you want to add a close button)
+function closePopup() {
+  var popup = document.getElementById('updatePopup');
+  popup.style.display = 'none';
+}
+ 
+// Update the updateEmployee function to call the popup function
+function openDialog(employee) {
+  updateEmployeePopup(employee);
+}
+ 
+ 
+ 
+  function deleteEmployee(employee) {
+      fetch(`${backendURI}/delete_employee/${employee}`, {
+          method: 'DELETE'
+      }).then(response => {
+          if (response.ok) {
+              getEmployeeList();
+          }
+      });
+  }
+  document.getElementById('openPageButton').addEventListener('click', function() {
+            window.open('http://127.0.0.1:8501/', '_blank');
+        });
+ 
+    const searchForEmployee = () => {
+    const name = document.getElementById('searchForEmployee').value.toLowerCase();
+    if (name) {
+        fetch(`${backendURI}/get_employee/${name}`)
+            .then(response => response.json())
+            .then(data => {
+                const answerDiv = document.getElementById('answerDiv');
+                answerDiv.innerHTML = ""; // Clear previous results
+               
+                // Create a table element
+                const table = document.createElement('table');
+                table.className = 'employee-table';
+               
+                // Create table header
+                const thead = document.createElement('thead');
+                thead.innerHTML = `
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Arrival Time</th>
+                        <th>Departure Time</th>
+                    </tr>
+                `;
+                table.appendChild(thead);
+               
+                // Create table body
+                const tbody = document.createElement('tbody');
+                if (Array.isArray(data)) {
+                    data.forEach(employee => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${employee.name}</td>
+                        <td>${employee.date}</td>
+                        <td>${employee.arrival_time}</td>
+                        <td>${employee.departure_time}</td>
+                    `;
+                    tbody.appendChild(row);
+                });
+                table.appendChild(tbody);
+               
+                // Append the table to the answerDiv
+                answerDiv.appendChild(table);
+                }
+ 
+            });
+    } else {
+        const answerDiv = document.getElementById('answerDiv');
+        answerDiv.innerHTML = '<p>No name found...</p>';
+    }
+};
+   
+     
+       
+    //     const searchForEmployee = () => {
+    //         const name = document.getElementById('searchForEmployee').value.toLowerCase();
+    //         if (name) {
+    //             fetch(`${backendURI}/get_employee/${name}`)
+    //                 .then(response => response.json())
+    //                 .then(data => {
+    //     const answerDiv = document.getElementById('answerDiv');
+    //     answerDiv.innerHTML = ""; // Clear previous results
+    //     data.forEach(employee => {
+    //         const ulList = document.createElement('ul');
+    //         const fields = [
+    //             { label: 'Name', value: employee.name },
+    //             { label: 'Date', value: employee.date },
+    //             { label: 'Arrival Time', value: employee.arrival_time },
+    //             { label: 'Departure Time', value: employee.departure_time },
+    //         ];
+    //         fields.forEach(field => {
+    //             const listItem = document.createElement('li');
+    //             listItem.className = 'list-item';
+    //             listItem.innerHTML = `<b>${field.label}:</b> <i>${field.value}</i>`;
+    //             ulList.appendChild(listItem);
+    //         });
+    //         answerDiv.appendChild(ulList);
+    //     });
+    // })
+    //         } else {
+    //             const answerDiv = document.getElementById('answerDiv');
+    //             answerDiv.innerHTML = '<p>No name found...</p>';
+    //         }
+    //     };
+ 
+    async function updateEmployee() {
+       
+    const currentName = document.getElementById('currentName').value;
+    const newName = document.getElementById('newName').value;
+   
+    const image = document.getElementById('image').files[0];
+    console.log(newName,image)
+   
+    // if (!currentName) {
+    //     alert('Current Name is required');
+    //     return;
+    // }
+ 
+    //if (!newName) {
+    //    alert('New Name is required');
+    //    return;
+    //}
+ 
+    if (!image) {
+        alert('Image is required');
+        return;
+    }
+   
+    const formData = new FormData();
+    // formData['new_name']=newName
+    // formData['image']=image
+    formData.append('new_name', newName);
+    formData.append('image', image);
+    console.log(formData)
+    try {
+        await fetch(`${backendURI}/update_employee/${currentName}`, {
+            method: 'PUT',
+            body: formData
+        }).then(response=>{
+           
+        console.log(response)
+        const result =  response.json();
+        console.log(result)
+       
+        // document.getElementById('updateAnswerDiv').innerText = '<span class="successAddUsers">'+result+'</span>';
+        // document.getElementById('updateAnswerDiv').innerHTML = '<span class="successAddUsers">' + result + '</span>';
+        document.getElementById('updateAnswerDiv').innerHTML = '<span class="successAddUsers">' + "Employee Name Updated Successfully...!" + '</span>';    
+    })
+       
+    } catch (error) {
+        console.error('Error:', error);
+        document.getElementById('updateAnswerDiv').innerText = 'Error while updating employee. Please try later...';
+    }
+   
+}
+   
+</script>
+</html>

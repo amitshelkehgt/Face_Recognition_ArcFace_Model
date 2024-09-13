@@ -1,0 +1,198 @@
+# altair
+# annotated-types
+# anyio
+# attrs
+# blinker
+# cachetools
+# certifi
+# charset-normalizer
+# click
+# cmake
+# colorama
+# dlib
+# dnspython
+# email_validator
+# face-recognition
+# face_recognition_models 
+# fastapi
+# fastapi-cli
+# Flask
+# Flask-Cors
+# gitdb
+# GitPython
+# h11
+# httpcore
+# httptools
+# httpx
+# idna
+# itsdangerous
+# Jinja2
+# jsonschema
+# jsonschema-specifications
+# markdown-it-py
+# MarkupSafe
+# mdurl
+# numpy
+# opencv-python
+# packaging
+# pandas
+# pillow
+# protobuf
+# psycopg2-binary
+# pyarrow
+# pydantic
+# pydantic_core
+# pydeck
+# Pygments
+# pymongo
+# python-dateutil
+# python-dotenv
+# python-multipart
+# pytz
+# PyYAML
+# referencing
+# requests
+# rich
+# rpds-py
+# setuptools
+# shellingham
+# six
+# smmap
+# sniffio
+# starlette
+# streamlit
+# tenacity
+# toml
+# toolz
+# tornado
+# typer
+# typing_extensions
+# tzdata
+# urllib3
+# uvicorn
+# watchdog
+# watchfiles
+# websockets
+# Werkzeug
+
+
+albucore
+albumentations
+altair
+annotated-types
+anyio
+attrs
+blinker
+cachetools
+certifi
+charset-normalizer
+click
+cmake
+colorama
+coloredlogs
+contourpy
+cycler
+Cython
+dlib
+dnspython
+easydict
+email_validator
+eval_type_backport
+face-recognition
+face_recognition_models 
+fastapi
+fastapi-cli
+filelock
+Flask
+Flask-Cors
+flatbuffers
+fonttools
+fsspec
+gitdb
+GitPython
+h11
+httpcore
+httptools
+httpx
+humanfriendly
+idna
+imageio
+insightface
+itsdangerous
+Jinja2
+joblib
+jsonschema
+jsonschema-specifications
+kiwisolver
+lazy_loader
+markdown-it-py
+MarkupSafe
+matplotlib
+mdurl
+mpmath
+narwhals
+networkx
+numpy
+onnx
+onnxruntime
+opencv-python
+opencv-python-headless
+packaging
+pandas
+pillow
+prettytable
+protobuf
+psutil
+psycopg2
+py-cpuinfo
+pyarrow
+pydantic
+pydantic_core
+pydeck
+Pygments
+pymongo
+pyparsing
+pyreadline3
+python-dateutil
+python-dotenv
+python-multipart
+pytz
+PyYAML
+referencing
+requests
+rich
+rpds-py
+scikit-image
+scikit-learn
+scipy
+seaborn
+setuptools
+shellingham
+six
+smmap
+sniffio
+starlette
+streamlit
+sympy
+tenacity
+threadpoolctl
+tifffile
+toml
+tomli
+toolz
+torch
+torchvision
+tornado
+tqdm
+typer
+typing_extensions
+tzdata
+ultralytics
+ultralytics-thop
+urllib3
+uvicorn
+watchdog
+watchfiles
+wcwidth
+websockets
+Werkzeug

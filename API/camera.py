@@ -131,7 +131,7 @@ import cv2, queue, threading, time
 import requests, os, re
 import numpy as np
 from insightface.app import FaceAnalysis
-
+import onnxruntime
 
 # Bufferless VideoCapture for RTSP stream
 class VideoCapture:
@@ -169,7 +169,7 @@ stream = "01"
 
 # Create the RTSP URL
 rtsp_url = f"rtsp://{username}:{password}@{ip}:{port}/Streaming/channels/{channel}{stream}"
-video_capture = VideoCapture(rtsp_url)
+video_capture = VideoCapture(0)
 
 # Initialize ArcFace
 app = FaceAnalysis(providers=['CUDAExecutionProvider', 'CPUExecutionProvider'])
@@ -210,7 +210,8 @@ face_names = []
 process_this_frame = True
 
 # Define tolerance parameter
-tolerance = st.slider('Set Tolerance', 0.1, 1.0, 0.6)
+# tolerance = st.slider('Set Tolerance', 0.1, 1.0, 0.6)
+tolerance = 1.00
 
 # Streamlit app
 st.title("Real-time Face Recognition")

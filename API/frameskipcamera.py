@@ -272,6 +272,7 @@ import cv2, queue, threading, time
 import requests, os, re
 import numpy as np
 from insightface.app import FaceAnalysis
+import onnxruntime
 
 # Bufferless VideoCapture for IP Camera
 class VideoCapture:
@@ -305,7 +306,7 @@ class VideoCapture:
 
 # IP camera credentials and URL setup
 username = "admin"
-password = "HgtlKKD%40%232022"
+password = "HgtlKKD@#2022"
 ip = "103.140.18.68"
 port = 554
 channel = "1"

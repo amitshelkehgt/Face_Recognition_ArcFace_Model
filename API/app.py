@@ -244,7 +244,7 @@ app.add_middleware(
 )
  
 # MongoDB configuration
-MONGO_URI = os.getenv('MONGO_URI', 'mongodb://localhost:27017/Face_Recognitions')
+MONGO_URI = os.getenv('db_url')
 client = MongoClient(MONGO_URI)
 db = client.get_database('Face_Recognitions')  # Specify the database name explicitly
  

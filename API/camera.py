@@ -408,7 +408,8 @@ from insightface.app import FaceAnalysis
 from pymongo import MongoClient
 
 # MongoDB Connection (Load embeddings once)
-client = MongoClient("mongodb://localhost:27017/")
+MONGO_URI = os.getenv('db_url')
+client = MongoClient(MONGO_URI)
 db = client["Face_Recognitions"]
 collection = db["face_embeddings"]
 

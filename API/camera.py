@@ -404,6 +404,7 @@ import cv2, queue, threading, time, asyncio
 import requests, os, re
 import numpy as np
 from insightface.app import FaceAnalysis
+# import onnxruntime
 from pymongo import MongoClient
 
 # MongoDB Connection (Load embeddings once)
@@ -449,11 +450,11 @@ class VideoCapture:
 video_capture = VideoCapture(0)
 
 # Initialize ArcFace Model with ONNX Runtime
-app = FaceAnalysis(name='buffalo_l', providers=['CUDAExecutionProvider'])
+app = FaceAnalysis(name='buffalo_l', providers=['CPUExecutionProvider'])  #'CUDAExecutionProvider'
 app.prepare(ctx_id=0, det_size=(320, 320))  # Smaller size for faster processing
 
 # Streamlit UI
-st.title("Optimized Real-time Face Recognition")
+st.title("Real-time Face Recognition")
 run = st.checkbox('Run')
 FRAME_WINDOW = st.empty()
 tolerance = 1.00

@@ -428,7 +428,7 @@ else:
 
 # Video Capture Class with Threading
 class VideoCapture:
-    def __init__(self, source=0):
+    def __init__(self, source):
         self.cap = cv2.VideoCapture(source)
         self.q = queue.Queue()
         t = threading.Thread(target=self._reader)
@@ -446,6 +446,19 @@ class VideoCapture:
 
     def read(self):
         return self.q.get()
+
+
+# Update with your RTSP camera URL
+username = "admin"
+password = "HgtlKKD%40%232022"
+ip = "103.140.18.68"
+port = 554
+channel = "1"
+stream = "01"
+
+# Create the RTSP URL
+rtsp_url = f"rtsp://{username}:{password}@{ip}:{port}/Streaming/channels/{channel}{stream}" 
+print(rtsp_url)      
 
 # Start video capture
 video_capture = VideoCapture(0)

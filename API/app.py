@@ -230,6 +230,9 @@ import numpy as np
 import re
 from datetime import datetime
 from insightface.app import FaceAnalysis
+from dotenv import load_dotenv
+ 
+load_dotenv()
  
 # Initialize FastAPI app
 app = FastAPI()
@@ -242,6 +245,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+ 
  
 # MongoDB configuration
 MONGO_URI = os.getenv('db_url')

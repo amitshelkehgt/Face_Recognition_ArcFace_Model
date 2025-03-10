@@ -1,0 +1,597 @@
+[{
+  "_id": {
+    "$oid": "6793820de0cd5add89af2f2c"
+  },
+  "name": "amit",
+  "date": "2025-1-24",
+  "arrival_time": "17:35",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/history/2025-1-24/Amit/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/2025-1-24/Amit/departure.jpg",
+  "departure_time": "17:39"
+},
+{
+  "_id": {
+    "$oid": "67938222e0cd5add89af2f2d"
+  },
+  "name": "rohan",
+  "date": "2025-1-24",
+  "arrival_time": "17:35",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/history/2025-1-24/Rohan/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/2025-1-24/Rohan/departure.jpg",
+  "departure_time": "17:37"
+},
+{
+  "_id": {
+    "$oid": "67938230e0cd5add89af2f2e"
+  },
+  "name": "adarsh",
+  "date": "2025-1-24",
+  "arrival_time": "17:36",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/history/2025-1-24/Adarsh/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/2025-1-24/Adarsh/departure.jpg",
+  "departure_time": "17:36"
+},
+{
+  "_id": {
+    "$oid": "6793823ce0cd5add89af2f2f"
+  },
+  "name": "alekya",
+  "date": "2025-1-24",
+  "arrival_time": "17:36",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/history/2025-1-24/Alekya/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/2025-1-24/Alekya/departure.jpg",
+  "departure_time": "17:36"
+},
+{
+  "_id": {
+    "$oid": "67938258e0cd5add89af2f30"
+  },
+  "name": "lokesh",
+  "date": "2025-1-24",
+  "arrival_time": "17:36",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/history/2025-1-24/Lokesh/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/2025-1-24/Lokesh/departure.jpg",
+  "departure_time": "17:36"
+},
+{
+  "_id": {
+    "$oid": "67938275e0cd5add89af2f31"
+  },
+  "name": "raju",
+  "date": "2025-1-24",
+  "arrival_time": "17:37",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/history/2025-1-24/Raju/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/2025-1-24/Raju/departure.jpg",
+  "departure_time": "17:37"
+},
+{
+  "_id": {
+    "$oid": "67938285e0cd5add89af2f32"
+  },
+  "name": "jayaram",
+  "date": "2025-1-24",
+  "arrival_time": "17:37",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/history/2025-1-24/Jayaram/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/2025-1-24/Jayaram/departure.jpg",
+  "departure_time": "17:39"
+},
+{
+  "_id": {
+    "$oid": "679725e2e0cd5add89af2f33"
+  },
+  "name": "amit",
+  "date": "2025-1-27",
+  "arrival_time": "11:51",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/history/2025-1-27/Amit/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/2025-1-27/Amit/departure.jpg",
+  "departure_time": "18:14"
+},
+{
+  "_id": {
+    "$oid": "6797261fe0cd5add89af2f34"
+  },
+  "name": "manikanta",
+  "date": "2025-1-27",
+  "arrival_time": "11:52",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/history/2025-1-27/Manikanta/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/2025-1-27/Manikanta/departure.jpg",
+  "departure_time": "18:13"
+},
+{
+  "_id": {
+    "$oid": "67976ac445a4bcd0b9798dbc"
+  },
+  "name": "rohan",
+  "date": "2025-1-27",
+  "arrival_time": "16:45",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/history/2025-1-27/Rohan/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/2025-1-27/Rohan/departure.jpg",
+  "departure_time": "18:3"
+},
+{
+  "_id": {
+    "$oid": "67976adc45a4bcd0b9798dbd"
+  },
+  "name": "alekya",
+  "date": "2025-1-27",
+  "arrival_time": "16:45",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/history/2025-1-27/Alekya/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/2025-1-27/Alekya/departure.jpg",
+  "departure_time": "17:45"
+},
+{
+  "_id": {
+    "$oid": "679778e745a4bcd0b9798dbe"
+  },
+  "name": "yamuna",
+  "date": "2025-1-27",
+  "arrival_time": "17:45",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/history/2025-1-27/Yamuna/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/2025-1-27/Yamuna/departure.jpg",
+  "departure_time": "17:45"
+},
+{
+  "_id": {
+    "$oid": "67977a5a45a4bcd0b9798dbf"
+  },
+  "name": "jayaram",
+  "date": "2025-1-27",
+  "arrival_time": "17:51",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/history/2025-1-27/Jayaram/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/2025-1-27/Jayaram/departure.jpg",
+  "departure_time": "17:52"
+},
+{
+  "_id": {
+    "$oid": "67977f6b45a4bcd0b9798dc0"
+  },
+  "name": "adarsh",
+  "date": "2025-1-27",
+  "arrival_time": "18:13",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/history/2025-1-27/Adarsh/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model-main\\API/assets/img/2025-1-27/Adarsh/departure.jpg",
+  "departure_time": "18:13"
+},
+{
+  "_id": {
+    "$oid": "67988d9efea42d07fdc641b9"
+  },
+  "name": "amit",
+  "date": "2025-1-28",
+  "arrival_time": "13:26",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-1-28/Amit/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-1-28/Amit/departure.jpg",
+  "departure_time": "17:36"
+},
+{
+  "_id": {
+    "$oid": "6798b6bd90f3cb24c8b7ad5b"
+  },
+  "name": "rohan",
+  "date": "2025-1-28",
+  "arrival_time": "16:21",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-1-28/Rohan/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-1-28/Rohan/departure.jpg",
+  "departure_time": "16:21"
+},
+{
+  "_id": {
+    "$oid": "6798b6ca90f3cb24c8b7ad5c"
+  },
+  "name": "manoj",
+  "date": "2025-1-28",
+  "arrival_time": "16:21",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-1-28/Manoj/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-1-28/Manoj/departure.jpg",
+  "departure_time": "16:26"
+},
+{
+  "_id": {
+    "$oid": "6798b6d990f3cb24c8b7ad5d"
+  },
+  "name": "alekya",
+  "date": "2025-1-28",
+  "arrival_time": "16:22",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-1-28/Alekya/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-1-28/Alekya/departure.jpg",
+  "departure_time": "16:22"
+},
+{
+  "_id": {
+    "$oid": "679b55b1aa0c7ba3e45d272c"
+  },
+  "name": "adarsh",
+  "date": "2025-1-30",
+  "arrival_time": "16:4",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-1-30/Adarsh/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-1-30/Adarsh/departure.jpg",
+  "departure_time": "18:14"
+},
+{
+  "_id": {
+    "$oid": "679b6a95a3064b8bfd0a77bb"
+  },
+  "name": "jayaram",
+  "date": "2025-1-30",
+  "arrival_time": "17:33",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-1-30/Jayaram/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-1-30/Jayaram/departure.jpg",
+  "departure_time": "17:34"
+},
+{
+  "_id": {
+    "$oid": "679b6ab5a3064b8bfd0a77bc"
+  },
+  "name": "nabhi",
+  "date": "2025-1-30",
+  "arrival_time": "17:34",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-1-30/Nabhi/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-1-30/Nabhi/departure.jpg",
+  "departure_time": "17:34"
+},
+{
+  "_id": {
+    "$oid": "679b7442a1af2378bda9f9a4"
+  },
+  "name": "adarsh chintada",
+  "date": "2025-1-30",
+  "arrival_time": "18:14",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-1-30/Adarsh Chintada/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-1-30/Adarsh Chintada/departure.jpg",
+  "departure_time": "18:46"
+},
+{
+  "_id": {
+    "$oid": "679b7569a1af2378bda9f9a5"
+  },
+  "name": "alekya",
+  "date": "2025-1-30",
+  "arrival_time": "18:19",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-1-30/Alekya/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-1-30/Alekya/departure.jpg",
+  "departure_time": "19:25"
+},
+{
+  "_id": {
+    "$oid": "679b7bb317fccf084ea597f9"
+  },
+  "name": "manikanta",
+  "date": "2025-1-30",
+  "arrival_time": "18:46",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-1-30/Manikanta/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-1-30/Manikanta/departure.jpg",
+  "departure_time": "18:57"
+},
+{
+  "_id": {
+    "$oid": "679b846605867ac9833f3edc"
+  },
+  "name": "naveen",
+  "date": "2025-1-30",
+  "arrival_time": "19:23",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-1-30/Naveen/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-1-30/Naveen/departure.jpg",
+  "departure_time": "19:24"
+},
+{
+  "_id": {
+    "$oid": "67a059cf05867ac9833f3edd"
+  },
+  "name": "amit",
+  "date": "2025-2-3",
+  "arrival_time": "11:23",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-3/Amit/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-3/Amit/departure.jpg",
+  "departure_time": "11:24"
+},
+{
+  "_id": {
+    "$oid": "67a059e905867ac9833f3ede"
+  },
+  "name": "rohan",
+  "date": "2025-2-3",
+  "arrival_time": "11:23",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-3/Rohan/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-3/Rohan/departure.jpg",
+  "departure_time": "11:23"
+},
+{
+  "_id": {
+    "$oid": "67a1b9f99120d0e10b632a50"
+  },
+  "name": "amit",
+  "date": "2025-2-4",
+  "arrival_time": "12:25",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-4/Amit/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-4/Amit/departure.jpg",
+  "departure_time": "18:59"
+},
+{
+  "_id": {
+    "$oid": "67a1c8d3d789d9fc3be9f571"
+  },
+  "name": "adarsh chintada",
+  "date": "2025-2-4",
+  "arrival_time": "13:29",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-4/Adarsh Chintada/arrival.jpg"
+},
+{
+  "_id": {
+    "$oid": "67a1c8f5d789d9fc3be9f572"
+  },
+  "name": "alekya",
+  "date": "2025-2-4",
+  "arrival_time": "13:29",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-4/Alekya/arrival.jpg"
+},
+{
+  "_id": {
+    "$oid": "67a1edeed789d9fc3be9f573"
+  },
+  "name": "rohan",
+  "date": "2025-2-4",
+  "arrival_time": "16:7",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-4/Rohan/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-4/Rohan/departure.jpg",
+  "departure_time": "17:26"
+},
+{
+  "_id": {
+    "$oid": "67a1ee9dd789d9fc3be9f574"
+  },
+  "name": "lova",
+  "date": "2025-2-4",
+  "arrival_time": "16:10",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-4/Lova/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-4/Lova/departure.jpg",
+  "departure_time": "16:10"
+},
+{
+  "_id": {
+    "$oid": "67a1f441d789d9fc3be9f575"
+  },
+  "name": "manoj",
+  "date": "2025-2-4",
+  "arrival_time": "16:34",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-4/Manoj/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-4/Manoj/departure.jpg",
+  "departure_time": "17:33"
+},
+{
+  "_id": {
+    "$oid": "67a465a7f6394868ff33f4a5"
+  },
+  "name": "amit",
+  "date": "2025-2-6",
+  "arrival_time": "13:2",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-6/Amit/arrival.jpg",
+  "departure_picture": "C:\\Latest_Face_code\\API/assets/img/2025-2-6/Amit/departure.jpg",
+  "departure_time": "19:19"
+},
+{
+  "_id": {
+    "$oid": "67a4bde60821720f9780da9c"
+  },
+  "name": "manoj",
+  "date": "2025-2-6",
+  "arrival_time": "19:19",
+  "arrival_picture": "C:\\Latest_Face_code\\API/assets/img/history/2025-2-6/Manoj/arrival.jpg",
+  "departure_picture": "C:\\Latest_Face_code\\API/assets/img/2025-2-6/Manoj/departure.jpg",
+  "departure_time": "19:19"
+},
+{
+  "_id": {
+    "$oid": "67a5b4446920d441b6f287db"
+  },
+  "name": "amit",
+  "date": "2025-2-7",
+  "arrival_time": "12:50",
+  "arrival_picture": "C:\\Latest_Face_code\\API/assets/img/history/2025-2-7/Amit/arrival.jpg",
+  "departure_picture": "C:\\Latest_Face_code\\API/assets/img/2025-2-7/Amit/departure.jpg",
+  "departure_time": "12:50"
+},
+{
+  "_id": {
+    "$oid": "67acd852e82e38f63999a882"
+  },
+  "name": "amit",
+  "date": "2025-2-12",
+  "arrival_time": "22:50",
+  "arrival_picture": "C:\\Latest_Face_code\\API/assets/img/history/2025-2-12/Amit/arrival.jpg",
+  "departure_picture": "C:\\Latest_Face_code\\API/assets/img/2025-2-12/Amit/departure.jpg",
+  "departure_time": "22:50"
+},
+{
+  "_id": {
+    "$oid": "67ada0cf8935830cdae9d5e9"
+  },
+  "name": "alekya",
+  "date": "2025-2-13",
+  "arrival_time": "13:5",
+  "arrival_picture": "C:\\Latest_Face_code\\API/assets/img/history/2025-2-13/Alekya/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-13/Alekya/departure.jpg",
+  "departure_time": "17:55"
+},
+{
+  "_id": {
+    "$oid": "67ada0d88935830cdae9d5ee"
+  },
+  "name": "alanka ramakrishna rao",
+  "date": "2025-2-13",
+  "arrival_time": "13:5",
+  "arrival_picture": "C:\\Latest_Face_code\\API/assets/img/history/2025-2-13/Alanka Ramakrishna Rao/arrival.jpg"
+},
+{
+  "_id": {
+    "$oid": "67adcb59ec6855b143fb5587"
+  },
+  "name": "amit",
+  "date": "2025-2-13",
+  "arrival_time": "16:7",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-13/Amit/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-13/Amit/departure.jpg",
+  "departure_time": "19:25"
+},
+{
+  "_id": {
+    "$oid": "67adcb66ec6855b143fb5588"
+  },
+  "name": "rohan",
+  "date": "2025-2-13",
+  "arrival_time": "16:7",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-13/Rohan/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-13/Rohan/departure.jpg",
+  "departure_time": "19:3"
+},
+{
+  "_id": {
+    "$oid": "67adcba6ec6855b143fb5589"
+  },
+  "name": "adarsh chintada",
+  "date": "2025-2-13",
+  "arrival_time": "16:8",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-13/Adarsh Chintada/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-13/Adarsh Chintada/departure.jpg",
+  "departure_time": "16:8"
+},
+{
+  "_id": {
+    "$oid": "67add93d4010f502492c7898"
+  },
+  "name": "yamuna",
+  "date": "2025-2-13",
+  "arrival_time": "17:6",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-13/Yamuna/arrival.jpg"
+},
+{
+  "_id": {
+    "$oid": "67add9834010f502492c7899"
+  },
+  "name": "manoj",
+  "date": "2025-2-13",
+  "arrival_time": "17:7",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-13/Manoj/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-13/Manoj/departure.jpg",
+  "departure_time": "18:47"
+},
+{
+  "_id": {
+    "$oid": "67af2f7f9605a791e35656e8"
+  },
+  "name": "amit",
+  "date": "2025-2-14",
+  "arrival_time": "17:26",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-14/Amit/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-14/Amit/departure.jpg",
+  "departure_time": "18:2"
+},
+{
+  "_id": {
+    "$oid": "67af2fb19605a791e35656e9"
+  },
+  "name": "rohan",
+  "date": "2025-2-14",
+  "arrival_time": "17:27",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-14/Rohan/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-14/Rohan/departure.jpg",
+  "departure_time": "17:27"
+},
+{
+  "_id": {
+    "$oid": "67af2ffe9605a791e35656ea"
+  },
+  "name": "naveen",
+  "date": "2025-2-14",
+  "arrival_time": "17:28",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-14/Naveen/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-14/Naveen/departure.jpg",
+  "departure_time": "17:29"
+},
+{
+  "_id": {
+    "$oid": "67af30cc9605a791e35656eb"
+  },
+  "name": "yamuna",
+  "date": "2025-2-14",
+  "arrival_time": "17:32",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-14/Yamuna/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-14/Yamuna/departure.jpg",
+  "departure_time": "17:32"
+},
+{
+  "_id": {
+    "$oid": "67af30dd9605a791e35656ec"
+  },
+  "name": "raja ramesh",
+  "date": "2025-2-14",
+  "arrival_time": "17:32",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-14/Raja Ramesh/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-14/Raja Ramesh/departure.jpg",
+  "departure_time": "17:38"
+},
+{
+  "_id": {
+    "$oid": "67af30fa9605a791e35656ed"
+  },
+  "name": "manoj",
+  "date": "2025-2-14",
+  "arrival_time": "17:33",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-14/Manoj/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-14/Manoj/departure.jpg",
+  "departure_time": "17:33"
+},
+{
+  "_id": {
+    "$oid": "67af35619605a791e35656ee"
+  },
+  "name": "manikanta",
+  "date": "2025-2-14",
+  "arrival_time": "17:51",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-14/Manikanta/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-14/Manikanta/departure.jpg",
+  "departure_time": "17:51"
+},
+{
+  "_id": {
+    "$oid": "67af35699605a791e35656ef"
+  },
+  "name": "adarsh chintada",
+  "date": "2025-2-14",
+  "arrival_time": "17:52",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-14/Adarsh Chintada/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-14/Adarsh Chintada/departure.jpg",
+  "departure_time": "17:52"
+},
+{
+  "_id": {
+    "$oid": "67b31f558f1d465afcd68b1c"
+  },
+  "name": "amit",
+  "date": "2025-2-17",
+  "arrival_time": "17:6",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-17/Amit/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-17/Amit/departure.jpg",
+  "departure_time": "17:49"
+},
+{
+  "_id": {
+    "$oid": "67b421e2e0e08467e66a0e75"
+  },
+  "name": "amit",
+  "date": "2025-2-18",
+  "arrival_time": "11:30",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-18/Amit/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-18/Amit/departure.jpg",
+  "departure_time": "16:51"
+},
+{
+  "_id": {
+    "$oid": "67b4619e630af8394c6e208b"
+  },
+  "name": "rohan",
+  "date": "2025-2-18",
+  "arrival_time": "16:1",
+  "arrival_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/history/2025-2-18/Rohan/arrival.jpg",
+  "departure_picture": "C:\\Face_Recognition_ArcFace_Model\\API/assets/img/2025-2-18/Rohan/departure.jpg",
+  "departure_time": "16:13"
+}]

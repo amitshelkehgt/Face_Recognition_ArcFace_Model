@@ -571,6 +571,18 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+ 
+st.set_page_config(
+    page_title="Face Recognition",
+    page_icon="👋",
+    layout="wide"
+)
+ 
+def get_public_url():
+    return "https://camera.kodefast.com"
+ 
+st.markdown(f"[Open Camera Page]({get_public_url()})")
+
 # MongoDB Connection (Load embeddings once)
 MONGO_URI = os.getenv('db_url')
 client = MongoClient(MONGO_URI)

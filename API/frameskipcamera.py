@@ -699,7 +699,7 @@ async def process_faces():
 # Async Function to Send Data to API
 async def send_data(data):
     try:
-        response = await asyncio.to_thread(requests.post, 'http://127.0.0.1:8000/receive_data', json=data)
+        response = await asyncio.to_thread(requests.post, 'https://camera.kodefast.com/', json=data)
         print("API Status:", response.status_code)
     except Exception as e:
         print("Error sending data:", e)

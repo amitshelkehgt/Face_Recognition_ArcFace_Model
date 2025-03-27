@@ -346,7 +346,9 @@ async def get_employee(name: str):
 async def add_employee(image: UploadFile = File(...), nameOfEmployee: str = Form(...)):
     try:
         # Store it in the folder of the known faces
-        file_path = os.path.join(f"assets/img/users/{nameOfEmployee}.jpg")
+        directory = f"assets/img/users/"
+        file_path = os.path.join(directory, f"{nameOfEmployee}.jpg")
+        os.makedirs(directory, exist_ok=True)
         with open(file_path, "wb") as f:
             f.write(await image.read())
  
@@ -461,4 +463,4 @@ async def delete_employee(name: str):
 # Run the FastAPI app
 if __name__ == '__main__':
     import uvicorn
-    uvicorn.run(app, host='127.0.0.1', port=8000, log_level="debug")
+    uvicorn.run(app, log_level="debug")

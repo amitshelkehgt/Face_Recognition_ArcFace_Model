@@ -566,6 +566,10 @@ import numpy as np
 from insightface.app import FaceAnalysis
 # import onnxruntime
 from pymongo import MongoClient
+from dotenv import load_dotenv
+ 
+load_dotenv()
+
 
 # MongoDB Connection (Load embeddings once)
 MONGO_URI = os.getenv('db_url')
@@ -573,18 +577,18 @@ client = MongoClient(MONGO_URI)
 db = client["Face_Recognitions"]
 collection = db["face_embeddings"]
 
-known_face_embeddings = []
-known_face_names = []
+# known_face_embeddings = []
+# known_face_names = []
 
-stored_faces_count = collection.count_documents({})
-if stored_faces_count > 0:
-    for face in collection.find({}):
-        known_face_names.append(face["name"])
-        known_face_embeddings.append(np.array(face["embedding"]))
-    print(f"Loaded {stored_faces_count} face embeddings from MongoDB.")
-else:
-    print("No stored embeddings found in MongoDB.")
-    exit()
+# stored_faces_count = collection.count_documents({})
+# if stored_faces_count > 0:
+#     for face in collection.find({}):
+#         known_face_names.append(face["name"])
+#         known_face_embeddings.append(np.array(face["embedding"]))
+#     print(f"Loaded {stored_faces_count} face embeddings from MongoDB.")
+# else:
+#     print("No stored embeddings found in MongoDB.")
+#     exit()
 
 # Video Capture Class with Threading
 class VideoCapture:
@@ -626,6 +630,19 @@ video_capture = VideoCapture(rtsp_url)
 # Initialize ArcFace Model with ONNX Runtime
 app = FaceAnalysis(name='buffalo_l', providers=['CPUExecutionProvider'])  #'CUDAExecutionProvider'
 app.prepare(ctx_id=0, det_size=(640, 640))  # Smaller size for faster processing
+
+known_face_embeddings = []
+known_face_names = []
+
+stored_faces_count = collection.count_documents({})
+if stored_faces_count > 0:
+    for face in collection.find({}):
+        known_face_names.append(face["name"])
+        known_face_embeddings.append(np.array(face["embedding"]))
+    print(f"Loaded {stored_faces_count} face embeddings from MongoDB.")
+else:
+    print("No stored embeddings found in MongoDB.")
+    exit()
 
 # Streamlit UI
 st.title("Real-time Face Recognition")
